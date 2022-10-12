@@ -76,7 +76,7 @@ function StereoAudioRecorderHelper(mediaStream, root) {
                 type: 'audio/pcm'
             });
 
-            console.debug('audio recorded blob size:', bytesToSize(blob.size));
+            //console.debug('audio recorded blob size:', bytesToSize(blob.size));
             root.ondataavailable(blob);
             return;
         }
@@ -214,7 +214,7 @@ function StereoAudioRecorderHelper(mediaStream, root) {
 
     bufferSize = scriptprocessornode.bufferSize;
 
-    console.debug('using audio buffer-size:', bufferSize);
+    //console.debug('using audio buffer-size:', bufferSize);
 
     var requestDataInvoked = false;
 
