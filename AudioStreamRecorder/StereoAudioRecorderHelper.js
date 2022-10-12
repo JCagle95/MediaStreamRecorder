@@ -120,7 +120,7 @@ function StereoAudioRecorderHelper(mediaStream, root) {
             type: 'audio/wav'
         });
 
-        console.debug('audio recorded blob size:', bytesToSize(blob.size));
+        //console.debug('audio recorded blob size:', bytesToSize(blob.size));
 
         root.ondataavailable(blob);
     };
